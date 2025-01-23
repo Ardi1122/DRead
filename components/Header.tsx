@@ -22,7 +22,7 @@ const Navbar = () => {
               </svg>
             </Link>
 
-            <Link href="/">
+            <Link href="/page/about">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -101,7 +101,7 @@ const Navbar = () => {
               </svg>
             </Link>
 
-            <Link href="/">
+            <Link href="/page/about">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="20px"
