@@ -46,7 +46,7 @@ const Navbar = () => {
               </svg>
             </Link>
 
-            <Link href="/">
+            <Link href="/page/shop">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="24px"
@@ -72,7 +72,7 @@ const Navbar = () => {
       {/* Versi Destop */}
 
       {/* Versi Hp */}
-      <div className="flex flex-col justify-between px-8 sm:px-12 pb-2 fixed left-0 right-0 top-0 h-screen md:hidden ">
+      <div className="flex flex-col justify-between px-8 sm:px-12 pb-2 fixed left-0 right-0 top-0 h-screen md:hidden">
         <div className="flex items-center justify-between bg-white py-6">
           <div>
             <h1 className="text-2xl font-bold">DRead</h1>
@@ -87,7 +87,7 @@ const Navbar = () => {
           </div>
         </div>
         <nav className="self-center">
-          <div className="flex py-2 px-6 bg-black rounded-full items-center gap-10 sm:gap-12 ">
+          <div className="flex py-2 px-6 bg-black rounded-full items-center gap-10 sm:gap-12">
             <Link href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ const Navbar = () => {
               </svg>
             </Link>
 
-            <Link href="/">
+            <Link href="/page/shop">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="20px"
