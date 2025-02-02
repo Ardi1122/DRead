@@ -8,13 +8,7 @@ const LibraryPage = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [isClient, setIsClient] = useState(false);
-  const [isSearch, setIsSearch] = useState(false);
 
-  const searchVisibility = isSearch ? "block" : "hidden md:block";
-
-  const handleSearch = () => {
-    setIsSearch((prev) => !prev);
-  };
 
   useEffect(() => {
     setIsClient(true);
@@ -52,15 +46,15 @@ const LibraryPage = () => {
 
       {/* Filter dan Pencarian */}
       <div className="mt-8 rounded-full">
-        <div className="flex md:justify-between justify-center items-center gap-4 bg-black px-8 py-3 rounded-full">
-          <h1 className="text-white font-bold text-2xl hidden lg:block">
+        <div className="flex md:justify-between justify-center items-center gap-4 bg-black px-4 py-6 sm:px-8 sm:py-3 rounded-full">
+          <h1 className="text-white font-bold  text-2xl hidden lg:block">
             Search Result
           </h1>
-          <div className="flex items-center gap-4">
-            <div>
+          <div className="flex flex-col justify-center sm:flex-row items-center gap-4">
+            <div className="mb-4 sm:mb-0">
               <label
                 htmlFor="category"
-                className="text-white text-sm hidden md:inline-block"
+                className="text-white text-sm hidden sm:inline-block"
               >
                 Filter by Category:
               </label>
@@ -71,7 +65,7 @@ const LibraryPage = () => {
                 onChange={(e) => setSelectedCategory(e.target.value)}
               >
                 {categories.map((category) => (
-                  <option key={category} value={category}>
+                  <option key={category} value={category} className="text-sm">
                     {category}
                   </option>
                 ))}
@@ -79,16 +73,15 @@ const LibraryPage = () => {
             </div>
 
             {/* Input Search */}
-            <div className="flex items-center bg-[#332C2C] px-3 md:w-72 py-1 text-white rounded-full relative">
+            <div className="flex items-center bg-[#332C2C] px-3 md:w-72 py-1 text-white rounded-full">
               <input
                 type="text"
                 placeholder="Search Your Books"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className={`text-sm ml-2 bg-[#332C2C] ${searchVisibility} outline-none w-full`}
+                className={`text-sm ml-2 bg-[#332C2C]  outline-none w-full`}
               />
               <button
-                onClick={handleSearch}
                 className="p-2 bg-white w-fit rounded-full"
               >
                 <svg
