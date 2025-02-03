@@ -72,7 +72,7 @@ const LibraryPage = () => {
               </select>
             </div>
 
-            {/* Input Search */}
+            
             <div className="flex items-center bg-[#332C2C] px-3 md:w-72 py-1 text-white rounded-full">
               <input
                 type="text"

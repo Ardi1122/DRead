@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Login from "./Login";
 
 const Navbar = () => {
 
@@ -14,7 +15,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Versi Destop */}
       <header className="flex justify-between items-center px-8 md:px-12 lg:px-24 py-8 fixed left-0 right-0 top-0 bg-white">
         <div>
           <h1 className="text-xl sm:text-2xl hidden sm:block lg:text-3xl font-bold ">DRead</h1>
@@ -62,12 +62,7 @@ const Navbar = () => {
         </nav>
 
         <div className="">
-          <Link
-            href=""
-            className="text-[1.1rem] lg:text-xl text-white font-medium py-2 px-6 bg-black rounded-full"
-          >
-            Sign In
-          </Link>
+          <Login/>
         </div>
       </header>
       {/* Versi Destop */}
